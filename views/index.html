@@ -26,6 +26,7 @@
 		    <input class="btn btn-primary" type="submit" value="Submit" />
 		  </form>
 	  {% endif %}
+	  <div id='tweet-wrapper'>
       {% for tweet in tweets %}
       	<div class="media" style="cursor:pointer;" onclick="window.location.href = '/users/{{tweet.name}}/tweets/{{tweet.id}}'">
 		  <div class="media-left">
@@ -40,6 +41,7 @@
 		  </div>
 		</div>
       {% endfor %}
+      </div>
     </div>
   </div>
     

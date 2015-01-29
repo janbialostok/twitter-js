@@ -28,15 +28,15 @@
 	  {% endif %}
 	  <div id='tweet-wrapper'>
       {% for tweet in tweets %}
-      	<div class="media" style="cursor:pointer;" onclick="window.location.href = '/users/{{tweet.name}}/tweets/{{tweet.id}}'">
+      	<div class="media" style="cursor:pointer;" onclick="window.location.href = '/users/{{tweet.UserId}}/tweets/{{tweet.id}}'">
 		  <div class="media-left">
 		    <a href="#">
 		      <img class="media-object" src="http://www.jammaplus.co.uk/forum/uploads/5237/Paper-Mario-icon.png">
 		    </a>
 		  </div>
 		  <div class="media-body">
-		    <h4 class="media-heading"><a href="/users/{{tweet.name}}">{{tweet.name}}</a></h4>
-        	<p>{{tweet.text}}</p>
+		    <h4 class="media-heading"><a href="/users/{{tweet.UserId}}">{{tweet.User.name}}{{name}}</a></h4>
+        	<p>{{tweet.tweet}}</p>
         	<a href="#">Re-tweet</a>
 		  </div>
 		</div>

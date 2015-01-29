@@ -5,6 +5,7 @@ var swig = require('swig');
 var routes = require('./routes/');
 var bodyParser = require('body-parser');
 var socketio = require('socket.io');
+//var models = require('./models/');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

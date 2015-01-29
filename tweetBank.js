@@ -18,9 +18,6 @@ module.exports = { add: add, list: list, find: find }
 
 
 
-
-
-
 //Sample generated data for tweetBank
 
 var randArrayEl = function(arr) {
